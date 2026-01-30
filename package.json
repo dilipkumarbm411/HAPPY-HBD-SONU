@@ -1,7 +1,7 @@
 {
   "name": "vite_react_shadcn_ts",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -26,11 +26,11 @@
     "zod": "^3.25.76",
     "date-fns": "^3.6.0",
     "recharts": "^2.15.4",
-    "vaul": "^0.9.9",
     "cmdk": "^1.1.1",
     "input-otp": "^1.4.2",
     "embla-carousel-react": "^8.6.0",
-    "sonner": "^1.7.4"
+    "sonner": "^1.7.4",
+    "vaul": "^0.9.9"
   },
   "devDependencies": {
     "vite": "^7.3.1",
