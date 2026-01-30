@@ -3,11 +3,9 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
-    // Only run componentTagger in development
     mode === "development" && componentTagger(),
   ].filter(Boolean),
 
@@ -18,11 +16,10 @@ export default defineConfig(({ mode }) => ({
   },
 
   build: {
-    outDir: "dist", // Netlify will serve this folder
-    sourcemap: false, // optional for smaller builds
+    outDir: "dist", // Render can serve this folder
+    sourcemap: false,
   },
 
-  // Optional: you can define global env variables if needed
   define: {
     "process.env": process.env,
   },
